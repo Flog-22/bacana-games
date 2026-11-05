@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Bacana Games</title>
+  <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="logo" href="index.html">Bacana Games</a>
+    <button class="botao-menu" id="botaoMenu" aria-label="Abrir ou fechar o menu">&#9776;</button>
+    <nav class="menu" id="menuPrincipal">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="form.html">Sugerir jogo</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="apresentacao">
+      <h1>Sobre o blog</h1>
+      <p>Conheça o projeto, o autor e como o site foi construído.</p>
+    </section>
+
+    <section class="bloco-sobre">
+      <h2>O projeto</h2>
+      <p>
+        O Bacana Games reúne jogos de PC que eu já joguei, cada um com nota de 0 a 10,
+        sinopse e a minha opinião sincera sobre a experiência. A página inicial permite
+        filtrar os jogos por categoria e ordenar pelas maiores notas.
+      </p>
+      <div class="estatisticas" id="estatisticas"></div>
+      <p class="creditos">As capas e os nomes dos jogos pertencem aos seus respectivos criadores e empresas e são usados apenas para fins educacionais.</p>
+    </section>
+
+    <section class="bloco-sobre">
+      <h2>O autor</h2>
+      <p>
+        Meu nome é Leonardo e sou estudante de Análise e Desenvolvimento de Sistemas.
+        Este site foi feito como atividade da disciplina de Fundamentos da Programação Web,
+        usando apenas HTML, CSS e JavaScript.
+      </p>
+    </section>
+
+    <section class="bloco-sobre">
+      <h2>Como o site foi feito</h2>
+      <div class="abas" id="abas">
+        <button class="botao-filtro ativo" data-aba="html">HTML</button>
+        <button class="botao-filtro" data-aba="css">CSS</button>
+        <button class="botao-filtro" data-aba="js">JavaScript</button>
+      </div>
+      <div class="aba-conteudo" id="abaConteudo"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Bacana Games &copy; 2026 - Leonardo</p>
+  </footer>
+  
+  <script src="script/menu.js"></script>
+  <script src="script/jogos.js"></script>
+  <script src="script/about.js"></script>
+</body>
+</html>

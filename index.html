@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bacana Games do Leonardo</title>
+  <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="logo" href="index.html">Bacana Games</a>
+    <button class="botao-menu" id="botaoMenu" aria-label="Abrir ou fechar o menu">&#9776;</button>
+    <nav class="menu" id="menuPrincipal">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="form.html">Sugerir jogo</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="apresentacao">
+      <h1>Jogos que eu joguei</h1>
+      <p>Só jogo bom na lista: notas de 0 a 10 e opinião sem filtro.</p>
+    </section>
+    <div class="busca">
+      <input type="search" id="campoBusca" placeholder="Buscar jogo pelo nome...">
+    </div>
+    <!-- Os filtros e os cartões serão criados pelo JavaScript na etapa 3 -->
+    <section id="filtros"></section>
+    <section id="gradeJogos"></section>
+  </main>
+
+  <footer class="rodape">
+    <p>Bacana Games &copy; 2026 - Leonardo</p>
+  </footer>
+  <script src="script/menu.js"></script>
+  <script src="script/jogos.js"></script>
+  <script src="script/filtro.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugerir jogo - Bacana Games</title>
+  <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="logo" href="index.html">Bacana Games</a>
+    <button class="botao-menu" id="botaoMenu" aria-label="Abrir ou fechar o menu">&#9776;</button>
+    <nav class="menu" id="menuPrincipal">
+      <a href="index.html" class="ativo">Início</a>
+      <a href="form.html">Sugerir jogo</a>
+      <a href="about.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <section class="apresentacao">
+      <h1>Sugira um jogo</h1>
+      <p>Indique um jogo para eu jogar e avaliar aqui no blog. Todos os campos são obrigatórios.</p>
+    </section>
+
+    <form id="formSugestao" class="formulario" action="formAction.html" method="get" novalidate>
+
+      <div class="campo">
+        <label for="nome">Seu nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex.: Maria Silva">
+        <span class="erro" id="erro-nome"></span>
+      </div>
+
+      <div class="campo">
+        <label for="email">Seu e-mail</label>
+        <input type="email" id="email" name="email" placeholder="Ex.: maria@email.com">
+        <span class="erro" id="erro-email"></span>
+      </div>
+
+      <div class="campo">
+        <label for="jogo">Nome do jogo sugerido</label>
+        <input type="text" id="jogo" name="jogo" placeholder="Ex.: Dark Souls III">
+        <span class="erro" id="erro-jogo"></span>
+      </div>
+
+      <div class="campo">
+        <label for="categoria">Categoria</label>
+        <select id="categoria" name="categoria">
+          <option value="">Selecione uma categoria</option>
+          <option value="Ação">Ação</option>
+          <option value="Aventura">Aventura</option>
+          <option value="Mundo aberto">Mundo aberto</option>
+          <option value="RPG de ação">RPG de ação</option>
+          <option value="Souls-like">Souls-like</option>
+          <option value="Metroidvania">Metroidvania</option>
+          <option value="Plataforma">Plataforma</option>
+          <option value="Hack and slash">Hack and slash</option>
+          <option value="Roguelike">Roguelike</option>
+          <option value="Outra">Outra</option>
+        </select>
+        <span class="erro" id="erro-categoria"></span>
+      </div>
+
+      <div class="campo">
+        <span class="rotulo">Plataforma</span>
+        <div class="radios">
+          <label><input type="radio" name="plataforma" value="PC"> PC</label>
+          <label><input type="radio" name="plataforma" value="PlayStation"> PlayStation</label>
+          <label><input type="radio" name="plataforma" value="Xbox"> Xbox</label>
+          <label><input type="radio" name="plataforma" value="Switch"> Switch</label>
+        </div>
+        <span class="erro" id="erro-plataforma"></span>
+      </div>
+
+      <div class="campo">
+        <label for="motivo">Por que você recomenda este jogo?</label>
+        <textarea id="motivo" name="motivo" rows="5" maxlength="300" placeholder="Conte o que torna esse jogo especial (mínimo de 20 caracteres)"></textarea>
+        <span class="contador" id="contador">0 / 300</span>
+        <span class="erro" id="erro-motivo"></span>
+      </div>
+
+      <div class="campo">
+        <label class="check">
+          <input type="checkbox" id="aceito" name="aceito" value="sim">
+          Aceito receber uma resposta sobre a minha sugestão
+        </label>
+        <span class="erro" id="erro-aceito"></span>
+      </div>
+
+      <button type="submit" class="botao-enviar">Enviar sugestão</button>
+    </form>
+  </main>
+
+  <footer class="rodape">
+    <p>Bacana Games &copy; 2026 - Leonardo</p>
+  </footer>
+  
+  <script src="script/menu.js"></script>
+  <script src="script/formulario.js"></script>
+</body>
+</html>
